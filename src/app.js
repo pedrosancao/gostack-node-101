@@ -30,7 +30,7 @@ app.post("/repositories", (request, response) => {
 app.put("/repositories/:id", (request, response) => {
   const { id } = request.params;
   const { title, url, techs } = request.body;
-  const recordIndex = repositories.findIndex(repository => repository.id = id);
+  const recordIndex = repositories.findIndex(repository => repository.id === id);
 
   if (recordIndex < 0) {
     return response(400).json({error: 'Record not found.'});
@@ -56,7 +56,7 @@ app.delete("/repositories/:id", (request, response) => {
 
 app.post("/repositories/:id/like", (request, response) => {
   const { id } = request.params;
-  const recordIndex = repositories.findIndex(repository => repository.id = id);
+  const recordIndex = repositories.findIndex(repository => repository.id === id);
 
   if (recordIndex < 0) {
     return response(400).json({error: 'Record not found.'});
