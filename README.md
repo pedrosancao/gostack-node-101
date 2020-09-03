@@ -2,9 +2,9 @@
 
 ![MIT License](https://img.shields.io/badge/license-MIT-%2304D361)
 
-# Node.Js 101
+# Node.js 101
 
-Challenge for Node.Js introdutory module on Rocketseat's GoStack Online Bootcamp.
+Challenge for Node.js introdutory module on Rocketseat's GoStack Online Bootcamp.
 
 This is a sample project to add and list "repositories" and are related to:
 
